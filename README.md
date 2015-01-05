@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/OCA/rma.svg?branch=master)](https://travis-ci.org/OCA/rma)
-[![Coverage Status](https://img.shields.io/coveralls/OCA/rma.svg)](https://coveralls.io/r/OCA/rma?branch=master)
-
 RMA (Return Merchandise Authorization) 
 =======================================
 
