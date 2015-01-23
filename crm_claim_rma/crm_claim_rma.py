@@ -332,7 +332,9 @@ class crm_claim(orm.Model):
 
     def init(self, cr):
         cr.execute("""
-            UPDATE "crm_claim" SET "number"=id::varchar WHERE ("number" is NULL)
+            UPDATE "crm_claim"
+            SET "number"=id::varchar
+            WHERE ("number" is NULL)
                OR ("number" = '/');
         """)
 
@@ -371,6 +373,7 @@ class crm_claim(orm.Model):
         new_id = super(crm_claim, self).create(cr, uid, vals, context=context)
         return new_id
 
+    # pylint: disable=W0622
     def copy_data(self, cr, uid, id, default=None, context=None):
         if default is None:
             default = {}
@@ -464,7 +467,8 @@ class crm_claim(orm.Model):
         invoice_lines = invoice_line_obj.browse(cr, uid, invoice_line_ids,
                                                 context=context)
         for invoice_line in invoice_lines:
-            product_id = invoice_line.product_id and invoice_line.product_id.id or False
+            product_id = invoice_line.product_id\
+                and invoice_line.product_id.id or False
             location_dest_id = claim_line_obj.get_destination_location(
                 cr, uid, product_id,
                 warehouse_id, context=context)
