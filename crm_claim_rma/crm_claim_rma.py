@@ -427,7 +427,7 @@ class crm_claim(orm.Model):
         'claim_type': 'customer',
         'warehouse_id': _get_default_warehouse,
     }
-    
+
     # Field "number" is assigned by default with "/"
     # then this constraint ever is broken
     #_sql_constraints = [
