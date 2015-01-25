@@ -427,11 +427,13 @@ class crm_claim(orm.Model):
         'claim_type': 'customer',
         'warehouse_id': _get_default_warehouse,
     }
-
-    _sql_constraints = [
-        ('number_uniq', 'unique(number, company_id)',
-         'Number/Reference must be unique per Company!'),
-    ]
+    
+    # Field "number" is assigned by default with "/"
+    # then this constraint ever is broken
+    #_sql_constraints = [
+    #    ('number_uniq', 'unique(number, company_id)',
+    #     'Number/Reference must be unique per Company!'),
+    #]
 
     def onchange_partner_address_id(self, cr, uid, ids, add, email=False,
                                     context=None):
