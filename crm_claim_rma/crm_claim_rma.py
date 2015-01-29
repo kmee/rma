@@ -373,7 +373,8 @@ class crm_claim(orm.Model):
         new_id = super(crm_claim, self).create(cr, uid, vals, context=context)
         return new_id
 
-    def copy_data(self, cr, uid, id, default=None, context=None):  # pylint: disable=W0622
+    def copy_data(self, cr, uid,
+                  id, default=None, context=None):  # pylint: disable=W0622
         if default is None:
             default = {}
         std_default = {

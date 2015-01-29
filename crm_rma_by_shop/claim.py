@@ -29,4 +29,3 @@ class crm_claim(orm.Model):
     _columns = {
         'shop_id': fields.many2one('sale.shop', 'Shop', select="1"),
     }
-

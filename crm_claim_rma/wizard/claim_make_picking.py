@@ -160,10 +160,10 @@ class claim_make_picking(orm.TransientModel):
         view_obj = self.pool.get('ir.ui.view')
 
         picking_type_obj = self.pool.get('stock.picking.type')
-        picking_type_in = picking_type_obj.search(cr, uid,
-                                                  [('name', '=', 'Receipts')])[0]
-        picking_type_out = picking_type_obj.search(cr, uid,
-                                                   [('name', '=', 'Delivery Orders')])[0]
+        picking_type_in = picking_type_obj.search(
+            cr, uid, [('name', '=', 'Receipts')])[0]
+        picking_type_out = picking_type_obj.search(
+            cr, uid, [('name', '=', 'Delivery Orders')])[0]
 
         name = 'RMA picking out'
         if context.get('picking_type') == 'out':
@@ -237,13 +237,15 @@ class claim_make_picking(orm.TransientModel):
                 {'name': wizard_claim_line.product_id.name_template,
                  'priority': '0',
                  'date': time.strftime(DEFAULT_SERVER_DATETIME_FORMAT),
-                 'date_expected': time.strftime(DEFAULT_SERVER_DATETIME_FORMAT),
+                 'date_expected':
+                 time.strftime(DEFAULT_SERVER_DATETIME_FORMAT),
                  'product_id': wizard_claim_line.product_id.id,
                  'product_uom': wizard_claim_line.product_id.uom_id.id,
                  'partner_id': partner_id,
-                 #'prodlot_id': wizard_claim_line.prodlot_id.id,
-                 #'product_qty': wizard_claim_line.product_returned_quantity,
-                 'product_uom_qty': wizard_claim_line.product_returned_quantity,
+                 # 'prodlot_id': wizard_claim_line.prodlot_id.id,
+                 # 'product_qty': wizard_claim_line.product_returned_quantity,
+                 'product_uom_qty':
+                 wizard_claim_line.product_returned_quantity,
                  'picking_id': picking_id,
                  'state': 'draft',
                  'price_unit': wizard_claim_line.unit_sale_price,

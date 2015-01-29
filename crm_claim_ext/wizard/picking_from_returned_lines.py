@@ -169,7 +169,8 @@ class picking_out_from_returned_lines(osv.osv_memory):
                     'claim_origine': "none",
                     'invoice_id': line.invoice_line_id.invoice_id.id,
                     'product_id': line.product_id.id,
-                    'product_returned_quantity': line.product_returned_quantity,
+                    'product_returned_quantity':
+                    line.product_returned_quantity,
                     'prodlot_id':  line.prodlot_id.id,
                     'price_unit':  line.unit_sale_price,
                     }))
