@@ -91,57 +91,6 @@
         </record>
 -->
 
-
-
-<!-- PRODUCT EXCHANGE -->
-    <!-- TREE -->
-<!--    <record model="ir.ui.view" id="crm_product_exchange_tree_view">-->
-<!--        <field name="name">CRM - Product exchange Tree</field>-->
-<!--        <field name="model">product.exchange</field>-->
-<!--        <field name="type">tree</field>-->
-<!--        <field name="arch" type="xml">-->
-<!--        <tree string="Product exchanges" editable="top" >-->
-<!--            <field name="selected"/>-->
-<!--            <field name="state"/>-->
-<!--            <field name="exchange_send_date"/>-->
-<!--            <field name="returned_product"/> -->
-<!--            <field name="returned_product_serial"/>-->
-<!--            <field name="replacement_product"/>-->
-<!--            <field name="replacement_product_serial"/>-->
-<!--            <field name="returned_value"/>-->
-<!--            <field name="replacement_value"/>-->
-<!--            <field name="name"/>    -->
-<!--        </tree>-->
-<!--        </field>-->
-<!--    </record>-->
-
-    <!-- FORM -->
-<!--    <record model="ir.ui.view" id="crm_product_exchange_form_view">-->
-<!--        <field name="name">CRM - Product exchange Form</field>-->
-<!--        <field name="model">product.exchange</field>-->
-<!--        <field name="arch" type="xml">-->
-<!--        <form string="Product exchange">-->
-<!--            <field name="state"/>-->
-<!--            <field name="exchange_send_date"/>-->
-<!--            <separator string="Returned product" colspan="2"/>-->
-<!--            <separator string="Replacement product" colspan="2"/>-->
-<!--            <field name="returned_product"/> -->
-<!--            <field name="replacement_product"/>-->
-<!--            <field name="returned_product_serial"/>-->
-<!--            <field name="replacement_product_serial"/> -->
-<!--            <field name="returned_product_qty"/>        -->
-<!--            <field name="replacement_product_qty"/>-->
-<!--            <field name="returned_unit_sale_price"/>-->
-<!--            <field name="replacement_unit_sale_price"/>-->
-<!--            <field name="returned_value"/>-->
-<!--            <field name="replacement_value"/>-->
-<!--            <separator string="Comment" colspan="2"/>-->
-<!--            <field name="name" colspan="4" nolabel="1"/>        -->
-<!--        </form>-->
-<!--        </field>-->
-<!--    </record>-->
-<!--        -->
-
  <!-- act_window
 
             context="{'search_default_account_id':[active_id], 'search_default_unreconciled':1, 'default_account_id': active_id}"
