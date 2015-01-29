@@ -60,7 +60,6 @@ msgid "Refused"
 msgstr ""
 
 #. module: crm_claim_rma
-#: view:stock.picking.in:0
 #: view:stock.picking.out:0
 msgid "To Invoice"
 msgstr ""
@@ -143,7 +142,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:crm_claim_rma.field_stock_picking_claim_id_4030
 #: model:ir.model.fields,field_description:crm_claim_rma.field_stock_picking_claim_id_4031
 #: field:stock.picking,claim_id:0
-#: field:stock.picking.in,claim_id:0
 #: field:stock.picking.out,claim_id:0
 msgid "Claim"
 msgstr "Solicitação"
@@ -534,11 +532,6 @@ msgid "expired"
 msgstr ""
 
 #. module: crm_claim_rma
-#: model:ir.model,name:crm_claim_rma.model_stock_picking_in
-msgid "Incoming Shipments"
-msgstr ""
-
-#. module: crm_claim_rma
 #: help:substate.substate,substate_descr:0
 msgid "To give more information about the sub state"
 msgstr ""
@@ -556,7 +549,6 @@ msgstr ""
 #. module: crm_claim_rma
 #: field:crm.claim,picking_ids:0
 #: model:ir.model.fields,field_description:crm_claim_rma.field_crm_claim_picking_ids
-#: view:stock.picking.in:0
 #: view:stock.picking.out:0
 msgid "RMA"
 msgstr ""
