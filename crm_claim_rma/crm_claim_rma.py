@@ -373,8 +373,7 @@ class crm_claim(orm.Model):
         new_id = super(crm_claim, self).create(cr, uid, vals, context=context)
         return new_id
 
-    # pylint: disable=W0622
-    def copy_data(self, cr, uid, id, default=None, context=None):
+    def copy_data(self, cr, uid, id, default=None, context=None):  # pylint: disable=W0622
         if default is None:
             default = {}
         std_default = {
@@ -430,10 +429,10 @@ class crm_claim(orm.Model):
 
     # Field "number" is assigned by default with "/"
     # then this constraint ever is broken
-    #_sql_constraints = [
+    # _sql_constraints = [
     #    ('number_uniq', 'unique(number, company_id)',
     #     'Number/Reference must be unique per Company!'),
-    #]
+    # ]
 
     def onchange_partner_address_id(self, cr, uid, ids, add, email=False,
                                     context=None):
