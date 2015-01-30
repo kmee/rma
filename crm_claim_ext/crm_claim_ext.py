@@ -34,7 +34,6 @@ class crm_claim_ext(osv.osv):
     _description = "Add some fields to crm_claim"
     _inherit = 'crm.claim'
     _columns = {
-        'canal_id': fields.many2one('res.partner.canal', 'Channel'),
         'som': fields.many2one('res.partner.som', 'State of Mind'),
                 # Aftersale outsourcing
 #        'in_supplier_picking_id': fields.many2one('stock.picking', 'Return To Supplier Picking', required=False, select=True),
