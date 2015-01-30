@@ -27,7 +27,7 @@
             <field name="model">crm.claim</field>
             <field name="inherit_id" ref="crm_claim.crm_case_claims_form_view"/>
             <field name="arch" type="xml">
-                <page string="Communication &amp; History" position="after">
+                <page string="Claim Description" position="after">
                     <page string="Product return"/>
                 </page>
             </field>
