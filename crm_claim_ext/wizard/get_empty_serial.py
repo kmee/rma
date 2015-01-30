@@ -24,7 +24,7 @@ from openerp.osv import fields, orm
 
 
 class get_empty_serial(orm.TransientModel):
-    _name='get_empty_serial.wizard'
+    _name='get.empty.serial.wizard'
     _description='' # Get possible serial for this return based on claim partner, product, invoice
     _columns = {
 #        'prodlot_ids': fields.many2many('temp.return.line', 'return_rel', 'wizard_id', 'temp_return_line_id', 'Return lines'),
