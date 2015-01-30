@@ -35,8 +35,14 @@ class crm_claim_ext(osv.osv):
     _inherit = 'crm.claim'
     _columns = {
         'canal_id': fields.many2one('crm.tracking.medium', 'Channel'),
-        'som': fields.many2one('res.partner.som', 'State of Mind'),
+
+        # TODO: the som fields refers to a disapper res.partner.som model, is
+        # required to search for the origine of this model and check if can be
+        # change for another model, if not, delete the field.
+        # 'som': fields.many2one('res.partner.som', 'State of Mind'),
+
                 # Aftersale outsourcing
+
 #        'in_supplier_picking_id': fields.many2one('stock.picking', 'Return To Supplier Picking', required=False, select=True),
 #        'out_supplier_picking_id': fields.many2one('stock.picking', 'Return From Supplier Picking', required=False, select=True),
 
