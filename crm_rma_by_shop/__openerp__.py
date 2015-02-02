@@ -31,20 +31,15 @@
 RMA Claim by shops
 ==================
 
-Claim improvements to use them by shops:
+**This module is deprecated to odoo 8.0**
+=========================================
 
- * Add shop on claim
- * Add various filter in order to work on a basic "by shop" basis
-
- Was originally designed for e-commerce purpose, but could probably do the trick
- for other cases as well.
-
+The sale.shop order model was deleted from oder 8.0 so this module is
+pointless.
 """,
  'images': [],
  'demo': [],
- 'data': [
-    'claim_view.xml',
- ],
- 'installable': True,
+ 'data': [],
+ 'installable': False,
  'application': True,
 }

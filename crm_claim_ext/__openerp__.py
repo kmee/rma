@@ -37,9 +37,9 @@ author (Akretion) take a decision on them.
     """,
     'author': 'esamyn',
     'website': 'http://www.erp-236.com',
-    'depends': ['crm_claim'],
+    'depends': ['crm_claim', 'crm_claim_rma'],
     'init_xml': [],
-    'update_xml': [
+    'data': [
         'crm_claim_ext_view.xml',
         'wizard/get_empty_serial_view.xml',
 #        'wizard/returned_lines_from_invoice_wizard_view.xml',
