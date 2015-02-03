@@ -21,21 +21,25 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.  #
 #########################################################################
 -->
+
 <openerp>
     <data>
+
 <!-- SELECT INVOICE FORM VIEW -->
         <record id="view_get_empty_serial" model="ir.ui.view">
             <field name="name">get_empty_serial</field>
-            <field name="model">get_empty_serial.wizard</field>
+            <field name="model">get.empty.serial.wizard</field>
             <field name="arch" type="xml">
                 <form string="Select invoice">
-					<!-- field name="prodlot_ids"/ --> <!-- domain="[('partner_id','=',partner_id)]"/ -->
-					<!-- field name="temp"/ -->
-                    <!-- group col="4" colspan="2">
+<!--                    
+					<field name="prodlot_ids" domain="[('partner_id','=',partner_id)]"/>
+                    <field name="temp"/>
+                    <group col="4" colspan="2">
                         <button special="cancel" string="Cancel" name="action_cancel" type="object" icon='gtk-cancel'/>
                         <button name="action_return_all" string="Return all invoice lines" icon='gtk-ok' type="object"/>
                         <button name="action_select_lines" string="Select lines to return" icon='gtk-ok' type="object"/>
-                    </group -->
+                    </group> 
+-->
                 </form>
             </field>
         </record> 
@@ -44,7 +48,7 @@
         <record id="action_get_empty_serial" model="ir.actions.act_window">
             <field name="name">action_get_empty_serial</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">get_empty_serial.wizard</field>
+            <field name="res_model">get.empty.serial.wizard</field>
 			<field name="src_model">claim.line</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>

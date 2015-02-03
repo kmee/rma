@@ -59,12 +59,6 @@ msgid "Refused"
 msgstr "Rechazado"
 
 #. module: crm_claim_rma
-#: view:stock.picking.in:0
-#: view:stock.picking.out:0
-msgid "To Invoice"
-msgstr "A facturar"
-
-#. module: crm_claim_rma
 #: field:claim.line,refund_line_id:0
 #: model:ir.model.fields,field_description:crm_claim_rma.field_claim_line_refund_line_id
 msgid "Refund Line"
@@ -143,8 +137,6 @@ msgstr "Calcular garantía"
 #: model:ir.model.fields,field_description:crm_claim_rma.field_stock_picking_claim_id_4030
 #: model:ir.model.fields,field_description:crm_claim_rma.field_stock_picking_claim_id_4031
 #: field:stock.picking,claim_id:0
-#: field:stock.picking.in,claim_id:0
-#: field:stock.picking.out,claim_id:0
 msgid "Claim"
 msgstr "Reclamación"
 
@@ -216,11 +208,6 @@ msgstr ""
 "proveedor y marca del fabricante. No significa necesariamente que la "
 "garantía que se aplica es el de la empresa que hace la devolución (es decir: "
 "se puede devolver a la empresa y estar bajo la garantía de la marca)"
-
-#. module: crm_claim_rma
-#: model:ir.model,name:crm_claim_rma.model_stock_picking_out
-msgid "Delivery Orders"
-msgstr "Órdenes de entrega"
 
 #. module: crm_claim_rma
 #: help:claim.line,last_state_change:0
@@ -548,11 +535,6 @@ msgid "expired"
 msgstr "expirado"
 
 #. module: crm_claim_rma
-#: model:ir.model,name:crm_claim_rma.model_stock_picking_in
-msgid "Incoming Shipments"
-msgstr "Albaranes de entrada"
-
-#. module: crm_claim_rma
 #: help:substate.substate,substate_descr:0
 msgid "To give more information about the sub state"
 msgstr "Permite ampliar la información del sub-estado"
@@ -570,8 +552,6 @@ msgstr "Localización desde la que vienen los productos devueltos."
 #. module: crm_claim_rma
 #: field:crm.claim,picking_ids:0
 #: model:ir.model.fields,field_description:crm_claim_rma.field_crm_claim_picking_ids
-#: view:stock.picking.in:0
-#: view:stock.picking.out:0
 msgid "RMA"
 msgstr "RMA"
 
@@ -897,11 +877,6 @@ msgstr "Dirección de envío inexistente"
 #: model:ir.actions.act_window,name:crm_claim_rma.act_crm_claim_rma_picking_in
 msgid "Incoming Shipment and Returns"
 msgstr ""
-
-#. module: crm_claim_rma
-#: view:stock.picking.out:0
-msgid "Delivery orders to invoice"
-msgstr "Ordenes de entrega a facturar"
 
 #. module: crm_claim_rma
 #: help:claim.line,move_in_id:0

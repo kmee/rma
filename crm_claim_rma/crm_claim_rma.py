@@ -288,7 +288,12 @@ class claim_line(orm.Model):
 
         """
         return_address = None
-        seller = claim_line_brw.product_id.seller_info_id
+        context = context or {}
+        psi_obj = self.pool.get('product.supplierinfo')
+        domain = [('name', '=', claim_line_brw.product_id.seller_id.id),
+                  ('product_tmpl_id', '=',
+                   claim_line_brw.product_id.product_tmpl_id.id)]
+        seller = psi_obj.search(cr, uid, domain, context=context)
         if seller:
             return_address_id = seller.warranty_return_address.id
             return_type = seller.warranty_return_partner

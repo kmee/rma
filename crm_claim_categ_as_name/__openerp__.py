@@ -32,7 +32,7 @@
     'website': 'http://www.akretion.com/',
     'depends': ['crm_claim_rma'],
     'init_xml': [],
-    'update_xml': [
+    'data': [
         'crm_claim_rma_view.xml',
     ],
     'demo_xml': [],
