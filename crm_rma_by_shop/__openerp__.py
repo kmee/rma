@@ -19,15 +19,16 @@
 #
 ##############################################################################
 
-{'name': 'RMA Claims by shop',
- 'version': '1.0',
- 'category': 'Generic Modules/CRM & SRM',
- 'depends': ['crm_claim', 'sale'
-             ],
- 'author': 'Camptocamp',
- 'license': 'AGPL-3',
- 'website': 'http://www.camptocamp.com',
- 'description': """
+{
+    'name': 'RMA Claims by shop',
+    'version': '1.0',
+    'category': 'Generic Modules/CRM & SRM',
+    'depends': ['crm_claim', 'sale'
+                ],
+    'author': 'Camptocamp',
+    'license': 'AGPL-3',
+    'website': 'http://www.camptocamp.com',
+    'description': """
 RMA Claim by shops
 ==================
 
@@ -37,9 +38,9 @@ RMA Claim by shops
 The sale.shop order model was deleted from oder 8.0 so this module is
 pointless.
 """,
- 'images': [],
- 'demo': [],
- 'data': [],
- 'installable': False,
- 'application': True,
+    'images': [],
+    'demo': [],
+    'data': [],
+    'installable': False,
+    'application': True,
 }
